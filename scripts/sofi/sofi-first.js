@@ -3,26 +3,20 @@
 // get the content of each cell
 
 function letterArr() {
-  var letters = "";
-  var newArray = [];
-  for (i = 0; i < document.all.length; ++i) {
-    letters = document.getElementsByTagName("td")[i].textContent;
-    newArray.push(letters);
+  var letters = document.getElementsByTagName("td")[1].textContent;
+  console.log('letters, A = A', letters);
+  for (i = 0; i < letters.length; ++i) {
+    let newArray = [];
+    newArray.push(letters[i]);
     console.log(newArray);
+    // var array = [];
+    // array = array.push(letters[i]);
+    // console.log('inside for loop block', array);
   }
-}
-letterArr();
   // console.log(array);
   // return array;
-
-// newArray.push(letters);
-// console.log(newArray);
-// let newArray = [];
-// newArray.push(letters);
-// console.log(newArray);
-// var array = [];
-// array = array.push(letters[i]);
-// console.log('inside for loop block', array);
+}
+letterArr();
 
 
 // let letter = function() {
